@@ -120,7 +120,7 @@ public class MiddleFilter extends FilterFramework
 				}
 			} catch (EndOfStreamException e) {
 				ClosePorts();
-				System.out.print("\n" + this.getName() + "::Sink Exiting; bytes read: " + bytesread);
+				System.out.print( "\n" + this.getName() + "::Middle Exiting; bytes read: " + bytesread + " bytes written: " + byteswritten );
 				break;
 			}
 		}
