@@ -5,6 +5,12 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/CsvUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/CsvUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/FilterFramework$EndOfStreamException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/FilterFramework$EndOfStreamException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/FilterFramework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/FilterFramework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/MiddleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/MiddleFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/SinkFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/SinkFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Filter/SourceFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/SourceFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CsvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CsvUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FilterFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilterFramework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MiddleFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MiddleFilter.java" afterDir="false" />
@@ -31,6 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -131,22 +138,22 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="803" y="422" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580092968364" />
-    <state width="1878" height="211" key="GridCell.Tab.0.bottom" timestamp="1580152345918">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1580175766496">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="211" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580152345918" />
-    <state width="1878" height="211" key="GridCell.Tab.0.center" timestamp="1580152345917">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175766496" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1580175766496">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="211" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580152345917" />
-    <state width="1878" height="211" key="GridCell.Tab.0.left" timestamp="1580152345917">
+    <state width="1878" height="129" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175766496" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1580175766495">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="211" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580152345917" />
-    <state width="1878" height="211" key="GridCell.Tab.0.right" timestamp="1580152345918">
+    <state width="1878" height="129" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175766495" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1580175766496">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="211" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580152345918" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175766496" />
     <state width="1878" height="211" key="GridCell.Tab.1.bottom" timestamp="1580152345919">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -167,6 +174,10 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="479" y="151" key="SettingsEditor/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580152057803" />
+    <state x="575" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580175935080">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="575" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175935080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -178,20 +189,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>file.exists()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="masterDetails">
     <states>
