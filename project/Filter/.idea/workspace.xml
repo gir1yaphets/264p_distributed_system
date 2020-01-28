@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/Filter/FilterFramework$EndOfStreamException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/FilterFramework$EndOfStreamException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Filter/FilterFramework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/FilterFramework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Filter/MiddleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/MiddleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Filter/Plumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/Plumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Filter/SinkFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/SinkFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Filter/SourceFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Filter/SourceFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CsvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CsvUtils.java" afterDir="false" />
@@ -142,22 +141,22 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="803" y="422" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580092968364" />
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1580175175567">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1580188805442">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175567" />
-    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1580175175566">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580188805442" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1580188805442">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175566" />
-    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1580175175565">
+    <state width="1878" height="129" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580188805442" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1580188805441">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175565" />
-    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1580175175567">
+    <state width="1878" height="129" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580188805441" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1580188805442">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175567" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580188805442" />
     <state width="1878" height="203" key="GridCell.Tab.1.bottom" timestamp="1580167457980">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -202,90 +201,5 @@
         <watch expression="buffer.array()" language="JAVA" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Filter</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>de.siegmar:fastcsv:1.0.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
