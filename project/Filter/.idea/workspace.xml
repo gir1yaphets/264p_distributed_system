@@ -142,22 +142,22 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="803" y="422" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580092968364" />
-    <state width="1878" height="55" key="GridCell.Tab.0.bottom" timestamp="1580170461390">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1580175175567">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="55" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580170461390" />
-    <state width="1878" height="55" key="GridCell.Tab.0.center" timestamp="1580170461390">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175567" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1580175175566">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="55" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580170461390" />
-    <state width="1878" height="55" key="GridCell.Tab.0.left" timestamp="1580170461389">
+    <state width="1878" height="129" key="GridCell.Tab.0.center/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175566" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1580175175565">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="55" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580170461389" />
-    <state width="1878" height="55" key="GridCell.Tab.0.right" timestamp="1580170461390">
+    <state width="1878" height="129" key="GridCell.Tab.0.left/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175565" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1580175175567">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
-    <state width="1878" height="55" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580170461390" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175175567" />
     <state width="1878" height="203" key="GridCell.Tab.1.bottom" timestamp="1580167457980">
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
@@ -182,13 +182,17 @@
       <screen x="0" y="23" width="1920" height="1006" />
     </state>
     <state x="687" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580164397976" />
+    <state x="608" y="137" width="703" height="777" key="find.popup" timestamp="1580175163857">
+      <screen x="0" y="23" width="1920" height="1006" />
+    </state>
+    <state x="608" y="137" width="703" height="777" key="find.popup/0.23.1920.1006/-1792.23.1792.1097@0.23.1920.1006" timestamp="1580175163857" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SinkFilter.java</url>
-          <line>112</line>
+          <line>114</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

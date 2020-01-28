@@ -34,7 +34,7 @@ public class SinkFilter extends FilterFramework
 		*	to the terminal.
 		*************************************************************************************/
 		Calendar TimeStamp = Calendar.getInstance();
-		SimpleDateFormat TimeStampFormat = new SimpleDateFormat("yyyy MM dd::hh:mm:ss:SSS");
+		SimpleDateFormat TimeStampFormat = new SimpleDateFormat("YYYY:DD:HH:MM");
 
 		int MeasurementLength = 8;		// This is the length of all measurements (including time) in bytes
 		int IdLength = 4;				// This is the length of IDs in the byte stream
@@ -47,6 +47,8 @@ public class SinkFilter extends FilterFramework
         double altitude = 0.0;
         double pressure = 0.0;
         double temperature = 0.0;
+
+		boolean addStar = false;
 
 		// First we announce to the world that we are alive...
 		System.out.print( "\n" + this.getName() + "::Sink Reading ");
@@ -111,7 +113,10 @@ public class SinkFilter extends FilterFramework
                     velocity = Double.longBitsToDouble(measurement);
                 } else if (id == 2) {
 				    altitude = Double.longBitsToDouble(measurement);
-                } else if (id == 3) {
+                } else if (id == -2) {
+					altitude = Double.longBitsToDouble(measurement);
+					addStar = true;
+				} else if (id == 3) {
                     pressure = Double.longBitsToDouble(measurement);
                 } else if ( id == 4 )
 				{
@@ -124,9 +129,10 @@ public class SinkFilter extends FilterFramework
 					 // we print the time stamp and the data associated with the ID we are interested in.
 					 ****************************************************************************/
 					temperature = Double.longBitsToDouble(measurement);
-//					System.out.print( TimeStampFormat.format(TimeStamp.getTime()) + " ID = " + id + " " + Double.longBitsToDouble(measurement)
-//							+ " velocity = " + velocity + " altitude = " + altitude + " pressure = " + pressure + " temperature = " + temperature);
-					data.add(makeCsvData(TimeStampFormat.format(TimeStamp.getTime()), velocity, altitude, pressure, temperature));
+					System.out.print( TimeStampFormat.format(TimeStamp.getTime()) + " ID = " + id + " " + Double.longBitsToDouble(measurement)
+							+ " velocity = " + velocity + " altitude = " + altitude + " pressure = " + pressure + " temperature = " + temperature);
+					data.add(makeCsvData(TimeStampFormat.format(TimeStamp.getTime()), velocity, altitude, pressure, temperature, addStar));
+					addStar = false;
 				}
 
 				System.out.print( "\n" );

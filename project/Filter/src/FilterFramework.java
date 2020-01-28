@@ -223,11 +223,11 @@ public class FilterFramework extends Thread
 		// Please see the example applications provided for more details.
 	}
 
-	protected List<String> makeCsvData(String time, double velocity, double altitude, double pressure, double temperature) {
+	protected List<String> makeCsvData(String time, double velocity, double altitude, double pressure, double temperature, boolean addStar) {
 		List<String> line = new ArrayList<>();
 		line.add(time);
 		line.add(String.valueOf(velocity));
-		String altitudeString = altitude < 0.0 ? -altitude + "*" : String.valueOf(altitude);
+		String altitudeString = addStar ? altitude + "*" : String.valueOf(altitude);
 		line.add(altitudeString);
 		line.add(String.valueOf(pressure));
 		line.add(String.valueOf(temperature));

@@ -25,8 +25,8 @@ import java.util.List;
 public class MiddleFilter extends FilterFramework
 {
 	private List<List<String>> data = new ArrayList<>();
-	private double prevAltitude = -1.0;
-	private double prevTwoAltitude = -1.0;
+	private double prevAltitude = Double.MIN_VALUE;
+	private double prevTwoAltitude = Double.MIN_VALUE;
 
 	public void run()
     {
@@ -38,7 +38,7 @@ public class MiddleFilter extends FilterFramework
 
 	private void filter() {
 		Calendar TimeStamp = Calendar.getInstance();
-		SimpleDateFormat TimeStampFormat = new SimpleDateFormat("yyyy MM dd::hh:mm:ss:SSS");
+		SimpleDateFormat TimeStampFormat = new SimpleDateFormat("YYYY:DD:HH:MM");
 
 		int MeasurementLength = 8;        // This is the length of all measurements (including time) in bytes
 		int IdLength = 4;                 // This is the length of IDs in the byte stream
@@ -59,6 +59,7 @@ public class MiddleFilter extends FilterFramework
 		while (true) {
 			try {
 				id = 0;
+				byte[] originalId = new byte[4];
 				for (i = 0; i < IdLength; i++) {
 					databyte = ReadFilterInputPort();    // This is where we read the byte from the stream...
 					id = id | (databyte & 0xFF);        // We append the byte on to ID...
@@ -67,7 +68,7 @@ public class MiddleFilter extends FilterFramework
 						id = id << 8;                    // to make room for the next byte we append to the ID
 					}
 					bytesread++;                        // Increment the byte count
-					WriteFilterOutputPort(databyte);
+					originalId[i] = databyte;
 					byteswritten++;
 				}
 
@@ -87,35 +88,42 @@ public class MiddleFilter extends FilterFramework
 
 				if (id == 0) {
 					TimeStamp.setTimeInMillis(measurement);
+					writeOutputStream(originalId);
 					writeOutputStream(originalData);
 				} else if (id == 1) {
 					velocity = Double.longBitsToDouble(measurement);
+					writeOutputStream(originalId);
 					writeOutputStream(originalData);
 				} else if (id == 2) {
 					altitude = Double.longBitsToDouble(measurement);
-					isWildJump = prevAltitude != -1.0 && Math.abs(altitude - prevAltitude) > 100.0;
+					isWildJump = prevAltitude != Double.MIN_VALUE && Math.abs(altitude - prevAltitude) > 100.0;
 
 					if (isWildJump) {
-						if (prevTwoAltitude == -1.0) {
-							altitude = prevAltitude;
+						double currAltitude;
+						if (prevTwoAltitude == Double.MIN_VALUE) {
+							currAltitude = prevAltitude;
 						} else {
-							altitude = -(prevAltitude + prevTwoAltitude) / 2;
+							currAltitude = (prevAltitude + prevTwoAltitude) / 2;
 						}
-						writeOutputStream(double2Bytes(altitude));
+						writeOutputStream(intToByteArray(-2));
+						writeOutputStream(double2Bytes(currAltitude));
 					} else {
+						writeOutputStream(originalId);
 						writeOutputStream(originalData);
 					}
 
 					prevTwoAltitude = prevAltitude;
-					prevAltitude = Double.longBitsToDouble(measurement);
+					prevAltitude = altitude;
 				} else if (id == 3) {
 					pressure = Double.longBitsToDouble(measurement);
+					writeOutputStream(originalId);
 					writeOutputStream(originalData);
 				} else if (id == 4) {
+					writeOutputStream(originalId);
 					writeOutputStream(originalData);
 					temperature = Double.longBitsToDouble(measurement);
 					if (isWildJump) {
-						data.add(makeCsvData(TimeStampFormat.format(TimeStamp.getTime()), velocity, altitude, pressure, temperature));
+						data.add(makeCsvData(TimeStampFormat.format(TimeStamp.getTime()), velocity, altitude, pressure, temperature, false));
 					}
 				}
 			} catch (EndOfStreamException e) {
