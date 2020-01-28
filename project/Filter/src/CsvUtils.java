@@ -9,14 +9,15 @@ import de.siegmar.fastcsv.writer.CsvWriter;
 
 public class CsvUtils {
 
-    public static final String EXPORT_CSV_PATH = "./filter.csv";
+    public static final String EXPORT_CSV_PATH = "./OuputB.csv";
 
-
-    public static void print(List<List<String>> data) {
-        File file = new File(EXPORT_CSV_PATH);
+    public static void print(List<List<String>> data, String fileName) {
+        fileName = fileName == null ? EXPORT_CSV_PATH : fileName;
+        File file = new File(fileName);
         CsvWriter csvWriter = new CsvWriter();
 
         try {
+            addTitle(data);
             Collection<String[]> result = new ArrayList<>();
 
             for (List<String> line : data) {
@@ -32,5 +33,16 @@ public class CsvUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void addTitle(List<List<String>> data) {
+        List<String> title = new ArrayList<>();
+        title.add("Time");
+        title.add("Velocity");
+        title.add("Altitude");
+        title.add("Pressure");
+        title.add("Temperature");
+
+        data.add(0, title);
     }
 }

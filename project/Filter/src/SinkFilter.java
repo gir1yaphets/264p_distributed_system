@@ -124,8 +124,8 @@ public class SinkFilter extends FilterFramework
 					 // we print the time stamp and the data associated with the ID we are interested in.
 					 ****************************************************************************/
 					temperature = Double.longBitsToDouble(measurement);
-					System.out.print( TimeStampFormat.format(TimeStamp.getTime()) + " ID = " + id + " " + Double.longBitsToDouble(measurement)
-							+ " velocity = " + velocity + " altitude = " + altitude + " pressure = " + pressure + " temperature = " + temperature);
+//					System.out.print( TimeStampFormat.format(TimeStamp.getTime()) + " ID = " + id + " " + Double.longBitsToDouble(measurement)
+//							+ " velocity = " + velocity + " altitude = " + altitude + " pressure = " + pressure + " temperature = " + temperature);
 					data.add(makeCsvData(TimeStampFormat.format(TimeStamp.getTime()), velocity, altitude, pressure, temperature));
 				}
 
@@ -144,17 +144,6 @@ public class SinkFilter extends FilterFramework
 			}
 		} // while
 
-		CsvUtils.print(data);
+		CsvUtils.print(data, null);
    } // run
-
-	private List<String> makeCsvData(String time, double velocity, double altitude, double pressure, double temperature) {
-		List<String> line = new ArrayList<>();
-		line.add(time);
-		line.add(String.valueOf(velocity));
-		line.add(String.valueOf(altitude));
-		line.add(String.valueOf(pressure));
-		line.add(String.valueOf(temperature));
-
-		return line;
-	}
 }

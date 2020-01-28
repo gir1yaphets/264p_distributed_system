@@ -30,6 +30,8 @@
 ******************************************************************************************************************/
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FilterFramework extends Thread
 {
@@ -219,5 +221,17 @@ public class FilterFramework extends Thread
     {
 		// The run method should be overridden by the subordinate class.
 		// Please see the example applications provided for more details.
+	}
+
+	protected List<String> makeCsvData(String time, double velocity, double altitude, double pressure, double temperature) {
+		List<String> line = new ArrayList<>();
+		line.add(time);
+		line.add(String.valueOf(velocity));
+		String altitudeString = altitude < 0.0 ? -altitude + "*" : String.valueOf(altitude);
+		line.add(altitudeString);
+		line.add(String.valueOf(pressure));
+		line.add(String.valueOf(temperature));
+
+		return line;
 	}
 }
