@@ -1,7 +1,5 @@
 package edu.uci.swe264p.retrofit;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     static final String TAG = MainActivity.class.getSimpleName();
     static final String BASE_URL = "https://api.themoviedb.org/3/";
     static Retrofit retrofit = null;
-    final static String API_KEY = "YOUR_API_KEY";
+    final static String API_KEY = "2e1dd31e5536b0e50d9bd19ce0f4e137";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
